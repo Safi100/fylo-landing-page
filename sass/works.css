@@ -1,0 +1,277 @@
+.curve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.curve img {
+  width: 100%;
+}
+
+.works {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 4%;
+  padding-top: 0;
+  position: relative;
+  background: #f8f8fe;
+  font-family: "Raleway", sans-serif;
+}
+
+.works h2 {
+  font-size: 33px;
+  margin-bottom: 25px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.works p {
+  margin-bottom: 15px;
+}
+
+.works div:first-child {
+  margin-right: 30px;
+}
+
+.works div img {
+  width: 100%;
+}
+
+.works div a {
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #3c9f8f;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.works div a img {
+  width: 25px;
+  margin-left: 3px;
+}
+
+.works div a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  background-color: #3c9f8f;
+}
+
+.works div .testimonial {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 320px;
+  background: #fff;
+}
+
+.works div .testimonial img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.works div .testimonial p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.works div .testimonial .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.works div .testimonial .avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.works div .testimonial .avatar p {
+  margin: 0;
+}
+
+.early_access {
+  background: #585989;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 60px 4%;
+}
+
+.early_access div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.early_access div h2 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.early_access div p {
+  font-family: "Raleway", sans-serif;
+  max-width: 481px;
+}
+
+.early_access form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 10px;
+}
+
+.early_access form input[type="email"] {
+  max-width: 500px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  border: none;
+  display: block;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.early_access form input[type="email"]::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+.early_access form input[type="email"]:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.early_access form input[type="email"]::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.early_access form input[type="email"]::placeholder {
+  color: #bfbfbf;
+}
+
+.early_access form button {
+  max-width: 205px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 14px;
+  background: #3065f8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 1275px) {
+  .works div h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1034px) {
+  .works div h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1035px) and (max-width: 1274px) {
+  .works div h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .works {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 4%;
+  }
+  .works .img-2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 50px;
+  }
+  .works div {
+    text-align: center;
+  }
+  .works div .testimonial {
+    margin: 0 auto;
+    text-align: left;
+  }
+  .works div .testimonial .name {
+    text-align: left;
+  }
+  .works div a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  .works div:first-child {
+    margin-right: 0;
+  }
+  .works div h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .early_access {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .early_access div {
+    margin-right: 0;
+  }
+  .early_access div p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .early_access form input[type="email"] {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .early_access form button {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .works div h2 {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=works.css.map */

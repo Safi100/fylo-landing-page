@@ -1,0 +1,108 @@
+@import "variables.scss";
+footer{
+    width: 100%;
+    background:$Very-Dark-Blue;
+    font-family: $Body-font;
+    padding:60px 4%;
+    position: relative;
+    svg{
+        margin-bottom: 15px;
+        path{fill:#fff}
+}
+    .attribution {
+        font-size: 11px;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        a{color: #f97878}
+    }
+    .row{
+        display: flex;
+        color: #fff;
+        .col{
+            &:not(:last-child){ul{li{width: max-content;}}}
+            flex-basis: 25%;
+            &:not(:first-child){
+                ul{
+                    
+                    li:hover a{color:$Desaturated-Blue;}
+                    li:hover{border-color:$Desaturated-Blue;}
+                }
+            }
+            li{
+                margin-bottom: 10px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .col-1{ 
+            li{ // Phone and email icons with texts
+                display: flex;
+                align-items: center;
+                &:first-child{img{margin-right:17px;}}
+                &:last-child{img{margin-right:15px;}}
+            } 
+        }
+        .col-2{
+            margin-left: 70px;
+            }
+        }
+        .col-4{
+            ul{
+                display: flex;
+               li{
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    &:hover li{background:green;}
+                    &:last-child{margin-right: 0;}
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        position: relative;  
+                    } 
+                }
+            }
+        }
+    }
+@media(max-width:1000px) {
+    footer{
+        svg{margin-bottom: 35px;}
+        .row{
+            flex-wrap: wrap;
+            .col{
+                flex-basis: 50%;
+            }
+            .col-2{display: flex;justify-content: center;margin-left: 0;}
+            .col-4{
+                display: flex;
+                justify-content: center;
+            ul{align-items: flex-end;}
+        }
+        }
+    }
+}
+@media (max-width:600px) {
+    footer{
+        .row{
+           .col{
+               flex-basis: 100%;
+               &:not(:last-child){margin-bottom: 40px;}
+           }
+           .col-2{display: block;}
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@import "variables.scss";
+.curve{
+    display: flex;
+    img{width: 100%;}
+} 
+.works{
+    width:100%;
+    display:flex;
+    padding:50px 4%;
+    padding-top: 0;
+    position:relative;
+    background:#f8f8fe;
+    font-family: $Heading-font;
+    h2{
+        font-size:33px; 
+        margin-bottom: 25px;
+        width:max-content;
+    }
+    p{    
+        margin-bottom: 15px;
+    }
+    div{
+        &:first-child{margin-right: 30px;}     
+        img{width:100%;} 
+        a{
+            img{width: 25px;margin-left: 3px;}
+            margin-bottom: 35px;
+            display:flex;
+            font-weight: 700;
+            align-items: center;
+            text-decoration:none;
+            color:$Moderate-Cyan;
+            position:relative;
+            width:max-content;
+            &::after{
+                content:'';
+                position:absolute;
+                width:100%;
+                height:2px;
+                bottom:-4px;
+                background-color:$Moderate-Cyan;
+            }
+        }
+        .testimonial{
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            max-width: 320px;
+            background: #fff;
+            img{
+                height:20px;
+                width:20px;
+                margin-bottom:10px;
+            }
+            p{font-size: 14px;margin-bottom: 20px;}
+            .avatar{
+                display:flex;
+                img{
+                    width:35px;
+                    height:35px;
+                    border-radius:100px;
+                    margin: 0;
+                    margin-right: 8px;
+                }
+                p{margin:0;}
+            }
+        }
+    }
+}
+.early_access{
+    background:$Desaturated-Blue;
+    color:#fff;
+    display:flex;
+    width: 100%;
+    padding: 60px 4%;
+    div{
+        flex-basis: 50%;
+        margin-right: 20px;
+        h2{
+            font-family: $Heading-font;
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: $Heading-font;
+            max-width: 481px;
+        }
+    }
+   
+    form{
+        flex-basis: 50%;
+        padding-top: 10px;
+        input[type="email"]{
+            max-width: 500px;
+            width: 100%;
+            font-family: $Heading-font;
+            font-size: 14px;
+            border: none;
+            display: block;
+            outline: none;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            &::placeholder{color: $Light-Gray;}
+        }
+        button{
+            max-width:205px;
+            width: 100%;
+            font-family: $Heading-font;
+            padding: 10px 25px;
+            font-weight: 700;
+            font-size: 14px;
+            background: hsl(224, 93%, 58%);
+            border:none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+@media (min-width:1275px) {
+    .works{
+        div{
+            h2{font-size: 30px;}
+        }
+    }
+}
+@media (min-width:769px) and (max-width:1034px) {
+    .works{
+        div{
+            h2{font-size: 20px;}
+        }
+    }
+}
+@media (min-width:1035px) and (max-width:1274px) {
+    .works{
+        div{
+            h2{font-size: 25px;}
+        }
+    }
+}
+@media (max-width:768px) {
+    .works{
+        flex-direction: column;
+        padding:50px 4%;
+        .img-2{order:-1;margin-bottom: 50px;}
+        div{
+            text-align: center;
+            .testimonial{
+                margin:0 auto;
+                text-align: left;
+                .name{text-align: left;}
+            }
+            a{
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 35px;
+            }
+            &:first-child{margin-right: 0;}
+            h2{width: 100%;font-size: 30px;}
+        }
+    }
+    .early_access{
+        flex-direction: column;
+        text-align: center;
+        div{
+            margin-right: 0;
+            p{
+                margin: 0 auto;
+                margin-bottom:20px;
+            }
+        }
+        form{
+            input[type="email"]{
+                margin:0 auto;
+                margin-bottom: 15px;
+            }
+            button{
+                max-width:500px;
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .works{
+        div{
+            h2{font-size:25px;}
+        }
+    }
+}

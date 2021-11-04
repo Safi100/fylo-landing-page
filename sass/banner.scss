@@ -1,0 +1,89 @@
+@import "variables.scss";
+.banner{
+    width: 100%;
+    display: flex;
+    padding: 0 4%;
+    margin-bottom: 100px;
+    font-family: $Heading-font;
+    div{
+        flex-basis: 50%;
+        &:first-child{align-self: center;}
+        &:last-child{img{width: 100%;}}
+        
+        h2{
+            font-size: 40px;
+            color: $Very-Dark-Blue;
+            margin-bottom: 20px;
+        }
+        p{
+            color:$Desaturated-Blue ;
+            margin-bottom: 20px;
+        }
+        input[type="email"]{
+            padding: 7px;
+            border-radius: 0;
+            outline: none;
+            padding-right: 40px;
+            border-color: black;
+            font-size: 14px;
+            &::placeholder{color:$Light-Gray;}
+        }
+        button{   
+            padding: 7px 40px;
+            background: hsl(224, 93%, 58%);
+            border-color: hsl(224, 93%, 58%);
+            font-size: 14px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+@media(max-width:768px){
+    .banner{
+        margin-top: 70px;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+        div:last-child{margin-bottom: 30px;order: -1;}
+    }
+}
+@media (max-width:1275px) {
+    .banner{
+        div{
+            h2{font-size: 30px;}
+        }
+    }
+}
+@media (max-width:600px){
+    .banner{
+        div{
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media (max-width:406px){
+    .banner{
+        div{
+            input[type="email"]{width:90%;margin-bottom: 10px;}
+            button{width:90%;}            
+        }
+    }
+}
+@media (max-width:341px){
+    .banner{
+        div{
+            h2{font-size: 20px;}           
+        }
+    }
+}
+@media (min-width:769px) and (max-width:1084px) {
+    .banner{
+        div{
+            h2{font-size: 28px;}
+            input[type="email"]{padding-right: 7px;}
+        }
+    }
+}

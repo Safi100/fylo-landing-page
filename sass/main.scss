@@ -1,0 +1,13 @@
+@import "variables.scss";
+@import "header.scss";
+@import "banner.scss";
+@import "works.scss";
+@import "footer.scss";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
