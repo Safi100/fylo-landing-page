@@ -9,18 +9,20 @@
 }
 
 .works {
-  width: 100%;
+  background: #f8f8fe;
+  padding: 50px 4%;
+  padding-top: 0;
+}
+
+.works .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 4%;
-  padding-top: 0;
   position: relative;
-  background: #f8f8fe;
   font-family: "Raleway", sans-serif;
 }
 
-.works h2 {
+.works .container h2 {
   font-size: 33px;
   margin-bottom: 25px;
   width: -webkit-max-content;
@@ -28,19 +30,28 @@
   width: max-content;
 }
 
-.works p {
+.works .container p {
   margin-bottom: 15px;
 }
 
-.works div:first-child {
+.works .container .img-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works .container div:first-child {
   margin-right: 30px;
 }
 
-.works div img {
+.works .container div img {
   width: 100%;
 }
 
-.works div a {
+.works .container div a {
   margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,12 +68,12 @@
   width: max-content;
 }
 
-.works div a img {
+.works .container div a img {
   width: 25px;
   margin-left: 3px;
 }
 
-.works div a::after {
+.works .container div a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -71,7 +82,7 @@
   background-color: #3c9f8f;
 }
 
-.works div .testimonial {
+.works .container div .testimonial {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   padding: 20px;
@@ -86,24 +97,24 @@
   background: #fff;
 }
 
-.works div .testimonial img {
+.works .container div .testimonial img {
   height: 20px;
   width: 20px;
   margin-bottom: 10px;
 }
 
-.works div .testimonial p {
+.works .container div .testimonial p {
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-.works div .testimonial .avatar {
+.works .container div .testimonial .avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.works div .testimonial .avatar img {
+.works .container div .testimonial .avatar img {
   width: 35px;
   height: 35px;
   border-radius: 100px;
@@ -111,43 +122,45 @@
   margin-right: 8px;
 }
 
-.works div .testimonial .avatar p {
+.works .container div .testimonial .avatar p {
   margin: 0;
 }
 
 .early_access {
   background: #585989;
+  padding: 60px 4%;
+}
+
+.early_access .container {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding: 60px 4%;
 }
 
-.early_access div {
+.early_access .container div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-right: 20px;
 }
 
-.early_access div h2 {
+.early_access .container div h2 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 20px;
 }
 
-.early_access div p {
+.early_access .container div p {
   font-family: "Raleway", sans-serif;
   max-width: 481px;
 }
 
-.early_access form {
+.early_access .container form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-top: 10px;
 }
 
-.early_access form input[type="email"] {
+.early_access .container form input[type="email"] {
   max-width: 500px;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -161,23 +174,23 @@
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.early_access form input[type="email"]::-webkit-input-placeholder {
+.early_access .container form input[type="email"]::-webkit-input-placeholder {
   color: #bfbfbf;
 }
 
-.early_access form input[type="email"]:-ms-input-placeholder {
+.early_access .container form input[type="email"]:-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.early_access form input[type="email"]::-ms-input-placeholder {
+.early_access .container form input[type="email"]::-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.early_access form input[type="email"]::placeholder {
+.early_access .container form input[type="email"]::placeholder {
   color: #bfbfbf;
 }
 
-.early_access form button {
+.early_access .container form button {
   max-width: 205px;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -191,86 +204,88 @@
 }
 
 @media (min-width: 1275px) {
-  .works div h2 {
+  .works .container div h2 {
     font-size: 30px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1034px) {
-  .works div h2 {
+  .works .container div h2 {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1035px) and (max-width: 1274px) {
-  .works div h2 {
+  .works .container div h2 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 768px) {
   .works {
+    padding: 50px 4%;
+  }
+  .works .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px 4%;
   }
-  .works .img-2 {
+  .works .container .img-2 {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
     margin-bottom: 50px;
   }
-  .works div {
+  .works .container div {
     text-align: center;
   }
-  .works div .testimonial {
+  .works .container div .testimonial {
     margin: 0 auto;
     text-align: left;
   }
-  .works div .testimonial .name {
+  .works .container div .testimonial .name {
     text-align: left;
   }
-  .works div a {
+  .works .container div a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  .works div:first-child {
+  .works .container div:first-child {
     margin-right: 0;
   }
-  .works div h2 {
+  .works .container div h2 {
     width: 100%;
     font-size: 30px;
   }
-  .early_access {
+  .early_access .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
   }
-  .early_access div {
+  .early_access .container div {
     margin-right: 0;
   }
-  .early_access div p {
+  .early_access .container div p {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .early_access form input[type="email"] {
+  .early_access .container form input[type="email"] {
     margin: 0 auto;
     margin-bottom: 15px;
   }
-  .early_access form button {
+  .early_access .container form button {
     max-width: 500px;
   }
 }
 
 @media (max-width: 700px) {
-  .works div h2 {
+  .works .container div h2 {
     font-size: 25px;
   }
 }
