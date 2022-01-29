@@ -21,7 +21,7 @@ footer{
             a{color: #f97878}
         }
         .row{
-            display: flex;
+            display: flex ;
             color: #fff;
             .col{
                 &:not(:last-child){ul{li{width: max-content;}}}
