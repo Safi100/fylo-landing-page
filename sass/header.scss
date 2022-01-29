@@ -1,70 +1,76 @@
 @import "variables.scss";
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 3% 4%;
-    font-family: $Heading-font;
-    ul{
+    .container{
         display: flex;
-        .fa{display: none;}
-        li{
-            list-style: none;
-            margin-right: 45px;
-            &:last-child{margin-right: 0;}
-            a{               
-                text-decoration: none;
-                color:$Desaturated-Blue;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: $Heading-font;
+        ul{
+            display: flex;
+            .fa{display: none;}
+            li{
+                list-style: none;
+                margin-right: 45px;
+                &:last-child{margin-right: 0;}
+                a{               
+                    text-decoration: none;
+                    color:$Desaturated-Blue;
+                }
+            }
+        }
+        .menu{
+            height: 40px;
+            width: 35px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            span{
+                width: 100%;
+                background: black;
+                height: 3px;
             }
         }
     }
-    .menu{
-        height: 40px;
-        width: 35px;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        span{
-            width: 100%;
-            background: black;
-            height: 3px;
-        }
-    }
+    
 }
 
 @media(max-width:700px){
     header{
         padding: 20px 15px;
-        .navbar{
-            position:fixed;
-            background: linear-gradient(140deg,$Bright-Blue,$Moderate-Cyan);
-            min-height: 100%;
-            display: block;
-            padding: 60px;
-            top: 0;
-            right: -250px;
-            transition: 1s;
-            z-index:2;
-            .fa {
+        .container{
+            .navbar{
+                position:fixed;
+                background: linear-gradient(140deg,$Bright-Blue,$Moderate-Cyan);
+                min-height: 100%;
                 display: block;
-                position: absolute;
-                left: 0;
+                padding: 60px;
                 top: 0;
-                margin: 20px;
-            }
-            .fa-remove:before, .fa-close:before, .fa-times:before {
-                content: "\f00d";
-                color: #fff;
-            }
-            li{
-                margin: 0;
-                margin-bottom: 60px;
-                a{color:#fff}
-            }
-        } 
-
-        .menu{display: flex;}
-        
+                right: -250px;
+                transition: 1s;
+                z-index:2;
+                .fa {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    margin: 20px;
+                }
+                .fa-remove:before, .fa-close:before, .fa-times:before {
+                    content: "\f00d";
+                    color: #fff;
+                }
+                li{
+                    margin: 0;
+                    margin-bottom: 60px;
+                    a{color:#fff}
+                }
+            } 
+    
+            .menu{display: flex;}
+        }
     }
+        
 }
