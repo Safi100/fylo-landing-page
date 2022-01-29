@@ -1,40 +1,42 @@
 .banner {
-  width: 100%;
+  padding: 0 4%;
+  margin-bottom: 100px;
+}
+
+.banner .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 4%;
-  margin-bottom: 100px;
   font-family: "Raleway", sans-serif;
 }
 
-.banner div {
+.banner .container div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-.banner div:first-child {
+.banner .container div:first-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.banner div:last-child img {
+.banner .container div:last-child img {
   width: 100%;
 }
 
-.banner div h2 {
+.banner .container div h2 {
   font-size: 40px;
   color: #070439;
   margin-bottom: 20px;
 }
 
-.banner div p {
+.banner .container div p {
   color: #585989;
   margin-bottom: 20px;
 }
 
-.banner div input[type="email"] {
+.banner .container div input[type="email"] {
   padding: 7px;
   border-radius: 0;
   outline: none;
@@ -43,23 +45,23 @@
   font-size: 14px;
 }
 
-.banner div input[type="email"]::-webkit-input-placeholder {
+.banner .container div input[type="email"]::-webkit-input-placeholder {
   color: #bfbfbf;
 }
 
-.banner div input[type="email"]:-ms-input-placeholder {
+.banner .container div input[type="email"]:-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.banner div input[type="email"]::-ms-input-placeholder {
+.banner .container div input[type="email"]::-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-.banner div input[type="email"]::placeholder {
+.banner .container div input[type="email"]::placeholder {
   color: #bfbfbf;
 }
 
-.banner div button {
+.banner .container div button {
   padding: 7px 40px;
   background: #3065f8;
   border-color: #3065f8;
@@ -71,15 +73,17 @@
 
 @media (max-width: 768px) {
   .banner {
+    padding: 0 15px;
     margin-top: 70px;
+  }
+  .banner .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 0 15px;
   }
-  .banner div:last-child {
+  .banner .container div:last-child {
     margin-bottom: 30px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -88,38 +92,38 @@
 }
 
 @media (max-width: 1275px) {
-  .banner div h2 {
+  .banner .container div h2 {
     font-size: 30px;
   }
 }
 
 @media (max-width: 600px) {
-  .banner div h2 {
+  .banner .container div h2 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 406px) {
-  .banner div input[type="email"] {
+  .banner .container div input[type="email"] {
     width: 90%;
     margin-bottom: 10px;
   }
-  .banner div button {
+  .banner .container div button {
     width: 90%;
   }
 }
 
 @media (max-width: 341px) {
-  .banner div h2 {
+  .banner .container div h2 {
     font-size: 20px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1084px) {
-  .banner div h2 {
+  .banner .container div h2 {
     font-size: 28px;
   }
-  .banner div input[type="email"] {
+  .banner .container div input[type="email"] {
     padding-right: 7px;
   }
 }
