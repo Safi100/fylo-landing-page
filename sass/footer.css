@@ -1,20 +1,22 @@
 footer {
-  width: 100%;
-  background: #070439;
-  font-family: "Open Sans", sans-serif;
   padding: 60px 4%;
+  background: #070439;
   position: relative;
 }
 
-footer svg {
+footer .container {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .container svg {
   margin-bottom: 15px;
 }
 
-footer svg path {
+footer .container svg path {
   fill: #fff;
 }
 
-footer .attribution {
+footer .container .attribution {
   font-size: 11px;
   position: absolute;
   color: #fff;
@@ -25,47 +27,47 @@ footer .attribution {
   left: 0;
 }
 
-footer .attribution a {
+footer .container .attribution a {
   color: #f97878;
 }
 
-footer .row {
+footer .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
 }
 
-footer .row .col {
+footer .container .row .col {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
 
-footer .row .col:not(:last-child) ul li {
+footer .container .row .col:not(:last-child) ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-footer .row .col:not(:first-child) ul li:hover a {
+footer .container .row .col:not(:first-child) ul li:hover a {
   color: #585989;
 }
 
-footer .row .col:not(:first-child) ul li:hover {
+footer .container .row .col:not(:first-child) ul li:hover {
   border-color: #585989;
 }
 
-footer .row .col li {
+footer .container .row .col li {
   margin-bottom: 10px;
   list-style: none;
 }
 
-footer .row .col li a {
+footer .container .row .col li a {
   text-decoration: none;
   color: #fff;
 }
 
-footer .row .col-1 li {
+footer .container .row .col-1 li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,25 +76,25 @@ footer .row .col-1 li {
           align-items: center;
 }
 
-footer .row .col-1 li:first-child img {
+footer .container .row .col-1 li:first-child img {
   margin-right: 17px;
 }
 
-footer .row .col-1 li:last-child img {
+footer .container .row .col-1 li:last-child img {
   margin-right: 15px;
 }
 
-footer .row .col-2 {
+footer .container .row .col-2 {
   margin-left: 70px;
 }
 
-footer .col-4 ul {
+footer .container .col-4 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .col-4 ul li {
+footer .container .col-4 ul li {
   border-radius: 50%;
   border: 1px solid #fff;
   display: -webkit-box;
@@ -110,33 +112,33 @@ footer .col-4 ul li {
   margin-right: 10px;
 }
 
-footer .col-4 ul li:hover li {
+footer .container .col-4 ul li:hover li {
   background: green;
 }
 
-footer .col-4 ul li:last-child {
+footer .container .col-4 ul li:last-child {
   margin-right: 0;
 }
 
-footer .col-4 ul li a {
+footer .container .col-4 ul li a {
   text-decoration: none;
   color: #fff;
   position: relative;
 }
 
 @media (max-width: 1000px) {
-  footer svg {
+  footer .container svg {
     margin-bottom: 35px;
   }
-  footer .row {
+  footer .container .row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  footer .row .col {
+  footer .container .row .col {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  footer .row .col-2 {
+  footer .container .row .col-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145,7 +147,7 @@ footer .col-4 ul li a {
             justify-content: center;
     margin-left: 0;
   }
-  footer .row .col-4 {
+  footer .container .row .col-4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,7 +155,7 @@ footer .col-4 ul li a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .row .col-4 ul {
+  footer .container .row .col-4 ul {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -161,14 +163,14 @@ footer .col-4 ul li a {
 }
 
 @media (max-width: 600px) {
-  footer .row .col {
+  footer .container .row .col {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  footer .row .col:not(:last-child) {
+  footer .container .row .col:not(:last-child) {
     margin-bottom: 40px;
   }
-  footer .row .col-2 {
+  footer .container .row .col-2 {
     display: block;
   }
 }
